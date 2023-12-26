@@ -1,6 +1,4 @@
-import { Accordion, AccordionDetails, AccordionSummary, Box, Button, Card, CardActionArea, CardMedia, FormControl, IconButton, InputLabel, MenuItem, Modal, Select, Typography } from '@mui/material'
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart'
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
+import { Accordion, AccordionDetails, AccordionSummary, Box, MenuItem } from '@mui/material'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 /* 
   <Accordion>

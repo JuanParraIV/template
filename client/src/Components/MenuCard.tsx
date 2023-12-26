@@ -1,7 +1,5 @@
-import { Box, Button, Card, CardActionArea, CardMedia, FormControl, IconButton, InputLabel, MenuItem, Modal, Select, Typography } from '@mui/material'
+import { Box, Button, Card, CardActionArea, CardMedia, IconButton, Modal, Typography } from '@mui/material'
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart'
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import AccordionModalPlato from './AccordionModalPlato';

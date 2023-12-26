@@ -1,4 +1,4 @@
-import { Box, FormControl, InputLabel, MenuItem, NativeSelect, Select, Typography } from '@mui/material'
+import { FormControl, InputLabel, MenuItem, Select } from '@mui/material'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 
 export const SelectPlato = () => {

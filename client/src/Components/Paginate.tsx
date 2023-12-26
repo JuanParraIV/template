@@ -2,8 +2,7 @@ import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrow
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import { Box, Pagination, PaginationItem, Stack } from '@mui/material';
-import { SpaceBar } from '@mui/icons-material';
+import { Pagination, PaginationItem } from '@mui/material';
 
 export const Paginate = () => {
   return (
