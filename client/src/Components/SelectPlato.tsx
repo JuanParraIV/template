@@ -26,7 +26,7 @@ export const SelectPlato = () => {
               height: '1.5rem',
               overflow: 'hidden',
               flexShrink: 0,
-              objectFit: 'contain',  // Cambia el color del icono a blanco
+              objectFit: 'contain',  
             },
             "& .MuiOutlinedInput-notchedOutline": {
               border: 'none',  // Remueve el borde del Select
