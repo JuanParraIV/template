@@ -60,7 +60,11 @@ export const AccordionModalMenu = () => {
           </Box>
         </Box>
       </AccordionSummary>
-      <AccordionDetails>
+      <AccordionDetails
+        sx={{
+          width: '100%',
+        }}
+      >
         <PlatoName />
       </AccordionDetails>
     </Accordion>

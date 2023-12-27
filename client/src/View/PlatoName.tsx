@@ -26,6 +26,7 @@ const PlatoName = () => {
           justifyContent: 'flex-start',
           fontSize: '1.95rem',
           gap: '5rem',
+          width:'30%'
         }}
       >
         <Box
@@ -69,7 +70,6 @@ const PlatoName = () => {
             justifyContent: 'flex-start',
             fontSize: '1.95rem',
             gap: '0.5rem',
-            border: '2px solid blue',
             width: '100%',
 
           }}
@@ -173,8 +173,8 @@ const PlatoName = () => {
           borderRadius: '20px',
           background: 'linear-gradient(180deg, #f86260, #ebeb60)',
           boxShadow: '10px 0px 10px rgba(136, 6, 77, 0.3)',
-          width: '34.38rem',
-          height: '34.38rem',
+          width: '60.38rem',
+          height: '44.38rem',
         }}
       />
     </Box>
