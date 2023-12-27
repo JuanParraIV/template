@@ -1,8 +1,8 @@
 import { Footer } from '@/Components/Footer';
 import { SideBar } from '@/Components/SideBar';
-import { PreferencePlatoView } from '@/View/PreferencePlatoView';
+import { PreferenceMenuView } from '@/View/PreferenceMenuView';
 import Box from '@mui/material/Box';
-export const PreferencePage = () => {
+export const PreferencePage2 = () => {
   // const { setProfile, postUserGoogle, authLogin } = useGoogleAuthStore(state => state);
   // const { fetchSneakers } = useSneakerStore(state => state);
   return (
@@ -27,8 +27,7 @@ export const PreferencePage = () => {
       }>
 
       <SideBar />
-      <PreferencePlatoView/>
-
+      <PreferenceMenuView/>
       </Box>
       <Footer />
     </Box>

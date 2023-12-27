@@ -5,9 +5,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 export const SideBar = () => {
   return (
     <Box sx={{
-      position: 'absolute',
-      top: '0rem',
-      left: '0rem',
+      position: 'relative',
       borderRadius: '0px 20px 20px 0px',
       backgroundColor: '#f86260',
       boxShadow: '10px 0px 10px rgba(136, 6, 77, 0.3)',
@@ -18,6 +16,9 @@ export const SideBar = () => {
       padding: '2rem',
       gap: '26.06rem',
       fontSize: '1.88rem',
+      height: '100%',
+
+      width: '20%',
     }}>
       <Box sx={{
         flexShrink: 0,

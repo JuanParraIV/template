@@ -1,7 +1,8 @@
-import { Accordion, AccordionDetails, AccordionSummary, Box, MenuItem } from '@mui/material'
+import { Accordion, AccordionDetails, AccordionSummary, Box } from '@mui/material'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import PlatoName from '@/View/PlatoName';
 
-export const AccordionModalPlato = () => {
+export const AccordionModalMenu = () => {
   return (
     <Accordion
       sx={{
@@ -13,7 +14,7 @@ export const AccordionModalPlato = () => {
         flexDirection: 'column',
         alignItems: 'flex-start',
         justifyContent: 'flex-start',
-        width: '18.56rem',
+        width: '100%',
 
       }}
     >
@@ -44,15 +45,7 @@ export const AccordionModalPlato = () => {
             gap: '1rem'
           }}
         >
-          <Box
-            sx={{
-              position: 'relative',
-              borderRadius: '10px',
-              background: 'linear-gradient(180deg, #f86260, #e9ff60)',
-              width: '2.44rem',
-              height: '2.44rem',
-            }}
-          />
+          
           <Box>
             Nombre del plato
             <Box
@@ -68,12 +61,9 @@ export const AccordionModalPlato = () => {
         </Box>
       </AccordionSummary>
       <AccordionDetails>
-        <MenuItem value={10}>Ten</MenuItem>
-        <MenuItem value={20}>Twenty</MenuItem>
-        <MenuItem value={30}>Thirty</MenuItem>
+        <PlatoName />
       </AccordionDetails>
     </Accordion>
   )
 }
 
-export default AccordionModalPlato

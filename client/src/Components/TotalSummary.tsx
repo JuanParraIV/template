@@ -5,22 +5,27 @@ const TotalSummary = () => {
   return (
     <Box
       sx={{
-        flexShrink: 0,
+        position: "relative",
         display: 'flex',
+        flexShrink: 0,
         flexDirection: 'column',
         alignItems: 'flex-end',
         justifyContent: 'flex-start',
         gap: '1rem',
         color: '#f86260',
+        marginLeft: 'auto',
       }}
     >
       <Typography variant="subtitle1"
         sx={{
           position: 'relative',
-          display: 'inline-block',
-          width: '3.25rem',
-          height: '2.56rem',
+          display: 'flex',
+          alignItems: 'flex-end',
+          justifyContent: 'flex-end',
           flexShrink: 0,
+          width: '100%',
+          height: '100%',
+          marginLeft: 'auto',
         }}
       >
         $00
@@ -29,13 +34,13 @@ const TotalSummary = () => {
         sx={{
           borderRadius: '5px',
           backgroundColor: '#f86260',
-          width: '18.56rem',
+          width: '100%',
           flexShrink: 0,
           display: 'flex',
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'center',
-          padding: '0.5rem 1rem',
+          padding: '0.5rem 3rem',
           boxSizing: 'border-box',
           gap: '0.63rem',
           fontSize: '1rem',
@@ -45,16 +50,18 @@ const TotalSummary = () => {
         <Typography variant="subtitle1"
           sx={{
             position: 'relative',
-            display: 'inline-block',
-            width: '7.38rem',
-            height: '1.25rem',
+            display: 'flex',
             flexShrink: 0,
+            width: '100%',
+            height: '100%',
           }}
         >
           Añadir al carrito
         </Typography>
         <AddShoppingCart
           sx={{
+            bgcolor: '#fff',
+            color: '#f86260',
             position: 'relative',
             borderRadius: '3px',
             width: '1.31rem',

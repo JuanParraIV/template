@@ -8,13 +8,11 @@ export const PreferenceHeader = () => {
       <Link to={'/'}>
         <Box
           sx={{
-            position: 'absolute',
-            top: '2rem',
-            left: '19.75rem',
+            position: 'relative',
             display: 'flex',
             flexDirection: 'row',
             alignItems: 'center',
-            justifyContent: 'center',
+            justifyContent: 'flex-start',
             gap: '1.5rem',
             color: '#f86260',
           }}

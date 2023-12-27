@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material"
-import { SelectPlato } from "./SelectPlato"
+import { AccordionModalMenu } from "./AccordionModalMenu"
 
 
 export const MenuName = () => {
@@ -13,8 +13,7 @@ export const MenuName = () => {
         justifyContent: "flex-start",
         gap: '3rem',
         fontSize: '1.25rem',
-        width: '58.13rem',
-        
+        width: '100%',
       }}
     >
       <Box
@@ -25,6 +24,7 @@ export const MenuName = () => {
           alignItems: 'flex-start',
           justifyContent: 'flex-start',
           fontSize: '1.95rem',
+
         }}
       >
         <Box
@@ -57,6 +57,7 @@ export const MenuName = () => {
             >
               <Typography variant="h5"
                 sx={{
+                  fontWeight: 600,
                   position: 'relative',
                 }}
               >
@@ -75,8 +76,9 @@ export const MenuName = () => {
           </Box>
         </Box>
       </Box>
-      <SelectPlato />
-      <SelectPlato />
+      <AccordionModalMenu/>
+      <AccordionModalMenu/>
+      <AccordionModalMenu/>
     </Box>
   )
 }

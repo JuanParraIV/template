@@ -4,11 +4,12 @@ export const Footer = () => {
   return (
     <Box
       sx={{
-        position: 'absolute',
+        position: 'relative',
         bottom: 0,
         left: '0rem',
+        marginTop: '3rem',
         backgroundColor: '#f86260',
-        width: '90rem',
+        width: '100%',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',

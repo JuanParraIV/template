@@ -4,7 +4,11 @@ import { PlatosCardView } from "./PlatosCardView"
 export const PlatosView = () => {
   return (
     <Box
-      sx={{}}
+      sx={{
+        width: "100%",
+        border: '2px solid #000',
+
+      }}
       display='flex'
       flexShrink={0}
       flexDirection={"column"}

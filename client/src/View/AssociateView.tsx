@@ -4,13 +4,15 @@ import { Box, Typography } from '@mui/material'
 export const AssociateView = () => {
   return (
     <Box sx={{
-      width: '67.06rem',
+      width: '100%',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'flex-start',
       gap: '2.5rem',
       fontSize: '1.56rem',
+      border: '2px solid #000',
+
     }}>
       <Typography variant="h6"
         sx={{
