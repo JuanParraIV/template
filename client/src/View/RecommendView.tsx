@@ -14,8 +14,6 @@ export const RecommendView = () => {
       gap: '2.5rem',
       fontSize: '1.56rem',
       width: '100%',
-      border: '2px solid #000',
-
     }}>
       <Typography variant="h6"
         sx={{

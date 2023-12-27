@@ -14,7 +14,6 @@ const PlatoName = () => {
         fontSize: '1.25rem',
         gap: '8.12rem',
         width: '100%',
-        border: '2px solid #000',
       }}
     >
       <Box
@@ -27,7 +26,6 @@ const PlatoName = () => {
           justifyContent: 'flex-start',
           fontSize: '1.95rem',
           gap: '5rem',
-          border: '2px solid #000',
         }}
       >
         <Box
@@ -40,7 +38,6 @@ const PlatoName = () => {
             justifyContent: 'flex-start',
             fontSize: '1.95rem',
             gap: '0.5rem',
-            border: '2px solid #000',
 
           }}
         >
@@ -178,8 +175,6 @@ const PlatoName = () => {
           boxShadow: '10px 0px 10px rgba(136, 6, 77, 0.3)',
           width: '34.38rem',
           height: '34.38rem',
-          border: '2px solid #000',
-
         }}
       />
     </Box>

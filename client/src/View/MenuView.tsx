@@ -13,8 +13,6 @@ export const MenuView = () => {
         justifyContent: 'flex-start',
         gap: '2.5rem',
         width:'100%',
-        border: '2px solid #000',
-
       }}
     >
       <Typography variant="subtitle1"

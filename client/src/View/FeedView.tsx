@@ -20,7 +20,6 @@ export const FeedView = () => {
         gap: '2rem',
         color: '#484848',
         margin: '3rem 3rem 0 0',
-        border: '2px solid #000',
       }}
     >
       <SearchBar />
@@ -31,7 +30,6 @@ export const FeedView = () => {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'flex-start',
-        border: '2px solid #000',
         width: '100%',
         height: '100%',
         gap:'3rem',

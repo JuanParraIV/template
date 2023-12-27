@@ -11,8 +11,6 @@ export const AssociateView = () => {
       justifyContent: 'flex-start',
       gap: '2.5rem',
       fontSize: '1.56rem',
-      border: '2px solid #000',
-
     }}>
       <Typography variant="h6"
         sx={{
