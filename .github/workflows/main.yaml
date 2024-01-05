@@ -28,11 +28,11 @@ jobs:
       - name: Install package
         run: yarn install
       - name: spelling
-        run: yarn spelling:ci .
+        run: yarn spelling:ci ./client
       - name: eslint
-        run: yarn eslint:ci components containers controllers hooks pages services utils views
+        run: yarn eslint:ci src
       - name: prettier
-        run: yarn prettier:ci components containers controllers hooks pages services utils views
+        run: yarn prettier:ci src
       # - name: test
       #   run: yarn test
       - name: build
