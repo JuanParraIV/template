@@ -1,0 +1,40 @@
+{
+  "version": "0.2",
+  "language": "en,es",
+  "words": [
+    "Azócar",
+    "azordev",
+    "camelcase",
+    "checkmark",
+    "Codacy",
+    "Comercial",
+    "commitlint",
+    "Enviar",
+    "eventos",
+    "jsdoc",
+    "Laguan",
+    "noopener",
+    "noreferrer",
+    "Parens",
+    "Peña",
+    "proveedores",
+    "Proveedores",
+    "Requisitos",
+    "stylelint",
+    "toastify",
+    "Toastify",
+    "Vercel",
+    "visby"
+  ],
+  "flagWords": [],
+  "ignorePaths": [
+    "./.github/**",
+    "./.vscode/**",
+    "node_modules/**",
+    "public/**",
+    "coverage/**",
+    "package.json",
+    "package-lock.json",
+    "README.md"
+  ]
+}
