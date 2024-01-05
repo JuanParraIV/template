@@ -28,7 +28,7 @@ jobs:
       - name: Install package
         run: yarn install
       - name: spelling
-        run: yarn spelling:ci ./client
+        run: yarn spelling:ci client
       - name: eslint
         run: yarn eslint:ci src
       - name: prettier
