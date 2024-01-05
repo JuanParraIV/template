@@ -16,7 +16,8 @@
     "prettier": "prettier --check src --config ./.prettierrc.js",
     "prettier:fix": "prettier --write src --config ./.prettierrc.js",
     "prettier:ci": "prettier --check --config ./.prettierrc.js",
-    "check": "npm run prettier && npm run eslint"
+    "check": "npm run prettier && npm run eslint",
+    "lefthook": "lefthook run lint"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
