@@ -1,10 +1,10 @@
 name: Security
 on:
   push:
-    branches: [dev]
+    branches: [develop]
   pull_request:
     types: [opened, synchronize, reopened]
-    branches: [main, dev, release-*]
+    branches: [main, develop, release-*]
 jobs:
   Security-And-Code-Scanning:
     runs-on: ubuntu-latest
