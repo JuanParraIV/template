@@ -23,24 +23,24 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'yarn'
+          cache: 'npm'
 
       - name: Install package
-        run: yarn install
+        run: npm install
       - name: spelling
-        run: yarn spelling:ci .
+        run: npm spelling:ci .
       - name: eslint
-        run: yarn eslint:ci components containers controllers hooks pages services utils views
+        run: npm eslint:ci components containers controllers hooks pages services utils views
       - name: prettier
-        run: yarn prettier:ci components containers controllers hooks pages services utils views
+        run: npm prettier:ci components containers controllers hooks pages services utils views
       # - name: test
-      #   run: yarn test
+      #   run: npm test
       - name: build
         env:
           NODE_ENV: production
           NEXT_PUBLIC_GRAPHQL_URL: ${{ secrets.NEXT_PUBLIC_GRAPHQL_URL }}
           NEXT_PUBLIC_MAGIC_PK: ${{ secrets.NEXT_PUBLIC_MAGIC_PK }}
           MAGIC_SK: ${{ secrets.MAGIC_SK }}
-        run: yarn build
+        run: npm build
     env:
       CI: true
