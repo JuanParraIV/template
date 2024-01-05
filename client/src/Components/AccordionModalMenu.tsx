@@ -36,6 +36,7 @@ export const AccordionModalMenu = () => {
           fontWeight: 600,
           position: 'relative',
           width: '100%',
+          
         }}
       >
         <Box
