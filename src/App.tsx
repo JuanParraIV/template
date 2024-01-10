@@ -1,9 +1,9 @@
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { DefaultPage } from '@/Components/DefaultPage';
-import { HomePage } from '@/Pages/HomePage';
-import { PreferencePage } from '@/Pages/PreferencePage';
-import { PreferencePage2 } from './Pages/PreferencePage2';
+import { DefaultPage } from '@/Components/DefaultPage'
+import { HomePage } from '@/Pages/HomePage'
+import { PreferencePage } from '@/Pages/PreferencePage'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { PreferencePage2 } from './Pages/PreferencePage2'
 
 
 export default function App() {

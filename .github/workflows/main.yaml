@@ -28,19 +28,13 @@ jobs:
       - name: Install package
         run: yarn install
       - name: spelling
-        run: yarn spelling:ci ./client/src
+        run: yarn spelling:ci ./src
       - name: eslint
-        run: yarn eslint:ci ./client/src
+        run: yarn eslint:ci ./src
       - name: prettier
-        run: yarn prettier:ci ./client/src
+        run: yarn prettier:ci ./src
       # - name: test
       #   run: yarn test
-      - name: build
-        env:
-          NODE_ENV: production
-          NEXT_PUBLIC_GRAPHQL_URL: ${{ secrets.NEXT_PUBLIC_GRAPHQL_URL }}
-          NEXT_PUBLIC_MAGIC_PK: ${{ secrets.NEXT_PUBLIC_MAGIC_PK }}
-          MAGIC_SK: ${{ secrets.MAGIC_SK }}
-        run: yarn build
+
     env:
       CI: true
