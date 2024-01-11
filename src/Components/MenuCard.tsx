@@ -1,13 +1,18 @@
-import { Box, Button, Card, CardActionArea, CardMedia, IconButton, Modal, Typography } from '@mui/material'
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart'
+import { Box, Button, Card, CardActionArea, CardMedia, IconButton, Modal, Typography } from '@mui/material'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
-import AccordionModalPlato from './AccordionModalPlato';
 
-export const MenuCard = () => {
+import AccordionModalPlato from './AccordionModalPlato'
+
+export const MenuCard: React.FC = () => {
   const [open, setOpen] = useState(false)
-  const handleOpen = () => setOpen(true)
-  const handleClose = () => setOpen(false)
+  const handleOpen = (): void => {
+    setOpen(true)
+  }
+  const handleClose = (): void => {
+    setOpen(false)
+  }
   return (
     <Card>
       <CardActionArea
@@ -95,7 +100,8 @@ export const MenuCard = () => {
                   >
                     Empresa
                   </Box>
-                  <Typography variant="subtitle1"
+                  <Typography
+                    variant="subtitle1"
                     sx={{
                       position: 'relative',
                       fontSize: '0.88rem',
@@ -130,7 +136,8 @@ export const MenuCard = () => {
                       flexShrink: 0,
                     }}
                   >
-                    <Box component='ul'
+                    <Box
+                      component="ul"
                       sx={{
                         margin: 0,
                         fontFamily: 'inherit',
@@ -138,22 +145,10 @@ export const MenuCard = () => {
                         paddingLeft: '0.81rem',
                       }}
                     >
-                      <Box component='li'
-                      >
-                        lorem ipsum
-                      </Box>
-                      <Box component='li'
-                      >
-                        lorem ipsum
-                      </Box>
-                      <Box component='li'
-                      >
-                        lorem ipsum
-                      </Box>
-                      <Box component='li'
-                      >
-                        lorem ipsum
-                      </Box>
+                      <Box component="li">lorem ipsum</Box>
+                      <Box component="li">lorem ipsum</Box>
+                      <Box component="li">lorem ipsum</Box>
+                      <Box component="li">lorem ipsum</Box>
                     </Box>
                   </Box>
                 </Box>
@@ -169,7 +164,8 @@ export const MenuCard = () => {
                     color: '#f86260',
                   }}
                 >
-                  <Typography variant="subtitle1"
+                  <Typography
+                    variant="subtitle1"
                     sx={{
                       position: 'relative',
                       display: 'inline-block',
@@ -249,7 +245,8 @@ export const MenuCard = () => {
                 gap: '0.5rem',
               }}
             >
-              <Typography variant="subtitle1"
+              <Typography
+                variant="subtitle1"
                 sx={{
                   position: 'relative',
                 }}
@@ -277,7 +274,8 @@ export const MenuCard = () => {
               gap: '0.25',
             }}
           >
-            <Typography variant="subtitle2"
+            <Typography
+              variant="subtitle2"
               sx={{
                 position: 'relative',
               }}
@@ -294,11 +292,10 @@ export const MenuCard = () => {
                 gap: '0.5rem',
                 fontSize: '0.88rem',
               }}
-            > 
-              <AccordionModalPlato/>
-              <AccordionModalPlato/>
-              <AccordionModalPlato/>
-              
+            >
+              <AccordionModalPlato />
+              <AccordionModalPlato />
+              <AccordionModalPlato />
             </Box>
           </Box>
           <Box
@@ -312,7 +309,8 @@ export const MenuCard = () => {
               color: '#f86260',
             }}
           >
-            <Typography variant="subtitle1"
+            <Typography
+              variant="subtitle1"
               sx={{
                 position: 'relative',
                 display: 'inline-block',
@@ -337,13 +335,12 @@ export const MenuCard = () => {
               />
             </IconButton>
           </Box>
-          <Link to={`/preferencias2`} >
+          <Link to={`/preferencias2`}>
             <Button
               sx={{
-                "&:hover": {
+                '&:hover': {
                   backgroundColor: '#f86260',
                   color: '#fff',
-
                 },
                 borderRadius: '5px',
                 backgroundColor: '#f86260',
@@ -356,7 +353,8 @@ export const MenuCard = () => {
                 color: '#fff',
               }}
             >
-              <Typography variant="subtitle1"
+              <Typography
+                variant="subtitle1"
                 sx={{
                   position: 'relative',
                   display: 'inline-block',
@@ -374,4 +372,3 @@ export const MenuCard = () => {
     </Card>
   )
 }
-

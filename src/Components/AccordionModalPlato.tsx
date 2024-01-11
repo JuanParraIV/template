@@ -1,7 +1,8 @@
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import { Accordion, AccordionDetails, AccordionSummary, Box, MenuItem } from '@mui/material'
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import React from 'react'
 
-export const AccordionModalPlato = () => {
+export const AccordionModalPlato: React.FC = () => {
   return (
     <Accordion
       sx={{
@@ -14,7 +15,6 @@ export const AccordionModalPlato = () => {
         alignItems: 'flex-start',
         justifyContent: 'flex-start',
         width: '18.56rem',
-
       }}
     >
       <AccordionSummary
@@ -27,7 +27,9 @@ export const AccordionModalPlato = () => {
               overflow: 'hidden',
               flexShrink: 0,
               objectFit: 'contain',
-            }} />}
+            }}
+          />
+        }
         aria-controls="panel1a-content"
         id="panel1a-header"
         sx={{
@@ -41,7 +43,7 @@ export const AccordionModalPlato = () => {
           sx={{
             display: 'flex',
             flexDirection: 'flex-start',
-            gap: '1rem'
+            gap: '1rem',
           }}
         >
           <Box

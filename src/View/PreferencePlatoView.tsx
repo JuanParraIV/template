@@ -1,10 +1,13 @@
+import { Box } from '@mui/material'
+import React from 'react'
+
 import Alergia from '@/Components/Alergia'
 import { PreferenceHeader } from '@/Components/PreferenceHeader'
 import TotalSummary from '@/Components/TotalSummary'
-import { Box } from '@mui/material'
+
 import PlatoName from './PlatoName'
 
-export const PreferencePlatoView = () => {
+export const PreferencePlatoView: React.FC = () => {
   return (
     <Box
       sx={{
@@ -20,28 +23,29 @@ export const PreferencePlatoView = () => {
         color: '#000',
       }}
     >
-      <Box sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'flex-start',
-        width: '100%',
-        height: '100%',
-        gap: '3rem',
-
-      }}>
-        <PreferenceHeader />
-        <Box sx={{
+      <Box
+        sx={{
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'flex-start',
           justifyContent: 'flex-start',
           width: '100%',
           height: '100%',
           gap: '3rem',
-          padding: '2rem 4rem',
-
-
-        }}>
+        }}
+      >
+        <PreferenceHeader />
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'flex-start',
+            justifyContent: 'flex-start',
+            width: '100%',
+            height: '100%',
+            gap: '3rem',
+            padding: '2rem 4rem',
+          }}
+        >
           <PlatoName />
           <Alergia />
           <TotalSummary />
@@ -50,4 +54,3 @@ export const PreferencePlatoView = () => {
     </Box>
   )
 }
-

@@ -1,16 +1,17 @@
-import { Box, Typography } from "@mui/material"
-import { AccordionModalMenu } from "./AccordionModalMenu"
+import { Box, Typography } from '@mui/material'
+import React from 'react'
 
+import { AccordionModalMenu } from './AccordionModalMenu'
 
-export const MenuName = () => {
+export const MenuName: React.FC = () => {
   return (
     <Box
       sx={{
         flexShrink: 0,
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "flex-start",
-        justifyContent: "flex-start",
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+        justifyContent: 'flex-start',
         gap: '3rem',
         fontSize: '1.25rem',
         width: '100%',
@@ -24,7 +25,6 @@ export const MenuName = () => {
           alignItems: 'flex-start',
           justifyContent: 'flex-start',
           fontSize: '1.95rem',
-
         }}
       >
         <Box
@@ -55,7 +55,8 @@ export const MenuName = () => {
                 gap: '0.5rem',
               }}
             >
-              <Typography variant="h5"
+              <Typography
+                variant="h5"
                 sx={{
                   fontWeight: 600,
                   position: 'relative',
@@ -76,9 +77,9 @@ export const MenuName = () => {
           </Box>
         </Box>
       </Box>
-      <AccordionModalMenu/>
-      <AccordionModalMenu/>
-      <AccordionModalMenu/>
+      <AccordionModalMenu />
+      <AccordionModalMenu />
+      <AccordionModalMenu />
     </Box>
   )
 }

@@ -1,21 +1,26 @@
-import { RecommendCard } from "@/Components/RecommendCard";
-import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import { Box, Typography } from "@mui/material";
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft'
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight'
+import { Box, Typography } from '@mui/material'
+import React from 'react'
 
-export const RecommendView = () => {
+import { RecommendCard } from '@/Components/RecommendCard'
+
+export const RecommendView: React.FC = () => {
   return (
-    <Box sx={{
-      flexShrink: 0,
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: "flex-start",
-      gap: '2.5rem',
-      fontSize: '1.56rem',
-      width: '100%',
-    }}>
-      <Typography variant="h6"
+    <Box
+      sx={{
+        flexShrink: 0,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+        gap: '2.5rem',
+        fontSize: '1.56rem',
+        width: '100%',
+      }}
+    >
+      <Typography
+        variant="h6"
         sx={{
           position: 'relative',
           display: 'inline-block',
@@ -72,9 +77,7 @@ export const RecommendView = () => {
             }}
           />
         </Box>
-
       </Box>
-
     </Box>
   )
 }

@@ -1,7 +1,8 @@
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-import { Box, Typography } from "@mui/material";
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart'
+import { Box, Typography } from '@mui/material'
+import React from 'react'
 
-export const RecommendCard = () => {
+export const RecommendCard: React.FC = () => {
   return (
     <Box
       sx={{
@@ -58,7 +59,8 @@ export const RecommendCard = () => {
           >
             Empresa
           </Box>
-          <Typography variant="subtitle1"
+          <Typography
+            variant="subtitle1"
             sx={{
               position: 'relative',
               fontSize: '0.88rem',
@@ -84,7 +86,8 @@ export const RecommendCard = () => {
               color: '#f86260',
             }}
           >
-            <Typography variant="subtitle1"
+            <Typography
+              variant="subtitle1"
               sx={{
                 position: 'relative',
                 display: 'inline-block',
@@ -112,4 +115,3 @@ export const RecommendCard = () => {
     </Box>
   )
 }
-

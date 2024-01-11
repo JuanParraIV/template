@@ -1,43 +1,42 @@
 # cSpell:word commitlint typecheck stylelint prettierrc
-#pre-commit:
-#  parallel: true
-#  colors: false
-#  commands:
-#    prettier:
-#      glob: '*.{js,jsx,ts,tsx}'
-#      run: npm run prettier:ci {staged_files}
-#      exclude: ".prettierrc.js"
-#    eslint:
-#      glob: '*.{js,jsx,ts,tsx}'
-#      run: npm run eslint:ci {staged_files}
-#    #stylelint:
-#    #  glob: './**/*.styled.jsx' # For CSS-in-JS
-#     # run: npm run stylelint:ci {staged_files}
-#    markdown-link-check:
-#      glob: '*.md'
-#      run: npx markdown-link-check {staged_files}
-#
-#commit-msg:
-#  parallel: true
-#  colors: false
-#  commands:
-#    lint-commit-msg:
-#      run: npx commitlint --edit --color=false --config commitlint.config.js
-#      skip:
-#        - merge
-#        - rebase
-#
-#lint:
-#  parallel: true
-#  commands:
-#    test:
-#      run: npm test
-#    prettier:
-#      run: npm run prettier
-#    eslint:
-#      run: npm run eslint
-#    stylelint:
-#      run: npm run stylelint
-#    markdown-link-check:
-#      run: npx markdown-link-check
-#
+pre-commit:
+  parallel: true
+  colors: false
+  commands:
+    prettier:
+      glob: '*.{js,jsx,ts,tsx}'
+      run: npm run prettier:ci {staged_files}
+      exclude: ".prettierrc.js"
+    eslint:
+      glob: '*.{js,jsx,ts,tsx}'
+      run: npm run eslint:ci {staged_files}
+      #stylelint:
+      #  glob: './**/*.styled.jsx' # For CSS-in-JS
+    # run: npm run stylelint:ci {staged_files}
+    markdown-link-check:
+      glob: '*.md'
+      run: npx markdown-link-check {staged_files}
+
+commit-msg:
+  parallel: true
+  colors: false
+  commands:
+    lint-commit-msg:
+      run: npx commitlint --edit --color=false --config commitlint.config.js
+      skip:
+      - merge
+      - rebase
+
+lint:
+  parallel: true
+  commands:
+    test:
+      run: npm test
+    prettier:
+      run: npm run prettier
+    eslint:
+      run: npm run eslint
+    stylelint:
+      run: npm run stylelint
+    markdown-link-check:
+      run: npx markdown-link-check

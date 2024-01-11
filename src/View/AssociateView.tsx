@@ -1,18 +1,23 @@
-import { AssociateCard } from '@/Components/AssociateCard'
 import { Box, Typography } from '@mui/material'
+import React from 'react'
 
-export const AssociateView = () => {
+import { AssociateCard } from '@/Components/AssociateCard'
+
+export const AssociateView: React.FC = () => {
   return (
-    <Box sx={{
-      width: '100%',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'flex-start',
-      gap: '2.5rem',
-      fontSize: '1.56rem',
-    }}>
-      <Typography variant="h6"
+    <Box
+      sx={{
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+        gap: '2.5rem',
+        fontSize: '1.56rem',
+      }}
+    >
+      <Typography
+        variant="h6"
         sx={{
           position: 'relative',
           display: 'inline-block',
@@ -34,12 +39,12 @@ export const AssociateView = () => {
           color: '#000',
         }}
       >
-        <AssociateCard/>
-        <AssociateCard/>
-        <AssociateCard/>
-        <AssociateCard/>
-        <AssociateCard/>
-        <AssociateCard/>
+        <AssociateCard />
+        <AssociateCard />
+        <AssociateCard />
+        <AssociateCard />
+        <AssociateCard />
+        <AssociateCard />
       </Box>
     </Box>
   )

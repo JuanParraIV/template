@@ -1,7 +1,9 @@
 import { Box } from '@mui/material'
-import { MenuCard } from '@/Components/MenuCard';
+import React from 'react'
 
-export const MenuCardView = () => {
+import { MenuCard } from '@/Components/MenuCard'
+
+export const MenuCardView: React.FC = () => {
   return (
     <Box
       sx={{
@@ -18,4 +20,3 @@ export const MenuCardView = () => {
     </Box>
   )
 }
-

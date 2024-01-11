@@ -1,12 +1,16 @@
-import { Box, Button, Card, CardActionArea, CardContent, CardMedia, IconButton, Modal, Typography } from "@mui/material"
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart'
-import { useState } from "react"
-import { Link } from "react-router-dom"
+import { Box, Button, Card, CardActionArea, CardContent, CardMedia, IconButton, Modal, Typography } from '@mui/material'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
-export const PlatosCard = () => {
+export const PlatosCard: React.FC = () => {
   const [open, setOpen] = useState(false)
-  const handleOpen = () => setOpen(true)
-  const handleClose = () => setOpen(false)
+  const handleOpen = (): void => {
+    setOpen(true)
+  }
+  const handleClose = (): void => {
+    setOpen(false)
+  }
   return (
     <Card>
       <CardActionArea
@@ -56,7 +60,8 @@ export const PlatosCard = () => {
           >
             Empresa
           </Box>
-          <Typography variant="subtitle1"
+          <Typography
+            variant="subtitle1"
             sx={{
               position: 'relative',
               fontSize: '0.88rem',
@@ -82,7 +87,8 @@ export const PlatosCard = () => {
               color: '#f86260',
             }}
           >
-            <Typography variant="subtitle1"
+            <Typography
+              variant="subtitle1"
               sx={{
                 position: 'relative',
                 display: 'inline-block',
@@ -161,7 +167,8 @@ export const PlatosCard = () => {
                 gap: '0.5rem',
               }}
             >
-              <Typography variant="subtitle1"
+              <Typography
+                variant="subtitle1"
                 sx={{
                   position: 'relative',
                 }}
@@ -189,7 +196,8 @@ export const PlatosCard = () => {
               gap: '0.25',
             }}
           >
-            <Typography variant="subtitle2"
+            <Typography
+              variant="subtitle2"
               sx={{
                 position: 'relative',
               }}
@@ -203,21 +211,24 @@ export const PlatosCard = () => {
                 fontWeight: 500,
               }}
             >
-              <Typography variant="subtitle2"
+              <Typography
+                variant="subtitle2"
                 sx={{
                   margin: 0,
                 }}
               >
                 Ingredientes
               </Typography>
-              <Typography variant="subtitle2"
+              <Typography
+                variant="subtitle2"
                 sx={{
                   margin: 0,
                 }}
               >
                 Ingredientes
               </Typography>
-              <Typography variant="subtitle2"
+              <Typography
+                variant="subtitle2"
                 sx={{
                   margin: 0,
                 }}
@@ -237,7 +248,8 @@ export const PlatosCard = () => {
               color: '#f86260',
             }}
           >
-            <Typography variant="subtitle1"
+            <Typography
+              variant="subtitle1"
               sx={{
                 position: 'relative',
                 display: 'inline-block',
@@ -262,13 +274,12 @@ export const PlatosCard = () => {
               />
             </IconButton>
           </Box>
-          <Link to={`/preferencias`} >
+          <Link to={`/preferencias`}>
             <Button
               sx={{
-                "&:hover": {
+                '&:hover': {
                   backgroundColor: '#f86260',
                   color: '#fff',
-
                 },
                 borderRadius: '5px',
                 backgroundColor: '#f86260',
@@ -281,7 +292,8 @@ export const PlatosCard = () => {
                 color: '#fff',
               }}
             >
-              <Typography variant="subtitle1"
+              <Typography
+                variant="subtitle1"
                 sx={{
                   position: 'relative',
                   display: 'inline-block',
@@ -299,4 +311,3 @@ export const PlatosCard = () => {
     </Card>
   )
 }
-

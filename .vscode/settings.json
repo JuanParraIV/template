@@ -66,5 +66,8 @@
     "**/node_modules": true
   },
   "stylelint.validate": ["css", "scss", ".module.scss"],
-  "prettier.configPath": ".prettierrc.js"
+  "prettier.configPath": ".prettierrc.js",
+  "cSpell.words": [
+    "rgba"
+  ]
 }

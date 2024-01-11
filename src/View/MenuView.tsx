@@ -1,7 +1,9 @@
-import { MenuCardView } from "@/View/MenuCardView"
-import { Box, Typography } from "@mui/material"
+import { Box, Typography } from '@mui/material'
+import React from 'react'
 
-export const MenuView = () => {
+import { MenuCardView } from '@/View/MenuCardView'
+
+export const MenuView: React.FC = () => {
   return (
     <Box
       sx={{
@@ -12,10 +14,11 @@ export const MenuView = () => {
         alignItems: 'center',
         justifyContent: 'flex-start',
         gap: '2.5rem',
-        width:'100%',
+        width: '100%',
       }}
     >
-      <Typography variant="subtitle1"
+      <Typography
+        variant="subtitle1"
         sx={{
           position: 'relative',
           fontSize: '1.56rem',

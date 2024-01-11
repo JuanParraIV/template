@@ -1,8 +1,10 @@
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import { Accordion, AccordionDetails, AccordionSummary, Box } from '@mui/material'
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import PlatoName from '@/View/PlatoName';
+import React from 'react'
 
-export const AccordionModalMenu = () => {
+import PlatoName from '@/View/PlatoName'
+
+export const AccordionModalMenu: React.FC = () => {
   return (
     <Accordion
       sx={{
@@ -15,7 +17,6 @@ export const AccordionModalMenu = () => {
         alignItems: 'flex-start',
         justifyContent: 'flex-start',
         width: '100%',
-
       }}
     >
       <AccordionSummary
@@ -28,7 +29,9 @@ export const AccordionModalMenu = () => {
               overflow: 'hidden',
               flexShrink: 0,
               objectFit: 'contain',
-            }} />}
+            }}
+          />
+        }
         aria-controls="panel1a-content"
         id="panel1a-header"
         sx={{
@@ -36,17 +39,15 @@ export const AccordionModalMenu = () => {
           fontWeight: 600,
           position: 'relative',
           width: '100%',
-          
         }}
       >
         <Box
           sx={{
             display: 'flex',
             flexDirection: 'flex-start',
-            gap: '1rem'
+            gap: '1rem',
           }}
         >
-          
           <Box>
             Nombre del plato
             <Box
@@ -71,4 +72,3 @@ export const AccordionModalMenu = () => {
     </Accordion>
   )
 }
-
