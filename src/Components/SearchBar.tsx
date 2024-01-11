@@ -1,27 +1,30 @@
+import SearchIcon from '@mui/icons-material/Search'
 import { FormControl, IconButton, InputAdornment, OutlinedInput } from '@mui/material'
-import SearchIcon from '@mui/icons-material/Search';
-import { useState } from 'react';
+import React, { useState } from 'react'
 
-type FormEvent = React.FormEvent<HTMLFormElement>;
-type InputEvent = React.ChangeEvent<HTMLInputElement>;
+type FormEvent = React.FormEvent<HTMLFormElement>
+type InputEvent = React.ChangeEvent<HTMLInputElement>
 
-export const SearchBar = () => {
-  const [search, setSearch] = useState('');
-  const handleOnSearch = (event: InputEvent) => {
-    const { value } = event.target;
-    if (event && event.preventDefault) event.preventDefault();
-    setSearch('');
-    setSearch(value);
-  };
-  const handleSubmit = (event: FormEvent) => {
-    if (event && event.preventDefault) event.preventDefault();
-    //fetch(search);
+export const SearchBar: React.FC = () => {
+  const [search, setSearch] = useState('')
+  const handleOnSearch = (event: InputEvent): void => {
+    const { value } = event.target
+    event?.preventDefault()
+    setSearch('')
+    setSearch(value)
+  }
+  const handleSubmit = (event: FormEvent): void => {
+    event?.preventDefault()
+    // fetch(search);
     console.log('click!!!')
-  };
+  }
   return (
-    <form onSubmit={handleSubmit} style={{
-      width:'100%'
-    }}>
+    <form
+      onSubmit={handleSubmit}
+      style={{
+        width: '100%',
+      }}
+    >
       <FormControl
         fullWidth
         sx={{
@@ -31,7 +34,6 @@ export const SearchBar = () => {
           flexDirection: 'column',
           alignItems: 'flex-end',
           justifyContent: 'flex-start',
-          
         }}
       >
         <OutlinedInput
@@ -47,14 +49,11 @@ export const SearchBar = () => {
             height: '2.75rem',
             zIndex: 0,
           }}
-          type='text'
+          type="text"
           placeholder="buscar..."
           endAdornment={
             <InputAdornment position="end">
-              <IconButton
-                type='submit'
-                edge="end"
-              >
+              <IconButton type="submit" edge="end">
                 <SearchIcon
                   sx={{
                     color: '#fff',
@@ -68,4 +67,3 @@ export const SearchBar = () => {
     </form>
   )
 }
-

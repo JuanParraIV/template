@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material'
+import React from 'react'
 
-export const AssociateCard = () => {
+export const AssociateCard: React.FC = () => {
   return (
     <Box
       sx={{
@@ -22,7 +23,8 @@ export const AssociateCard = () => {
           height: '5.56rem',
         }}
       />
-      <Typography variant='subtitle1'
+      <Typography
+        variant="subtitle1"
         sx={{
           position: 'relative',
         }}
@@ -45,4 +47,3 @@ export const AssociateCard = () => {
     </Box>
   )
 }
-

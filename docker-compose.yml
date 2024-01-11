@@ -1,19 +1,19 @@
-version: "3"
+version: '3'
 
 services:
   frontend:
     container_name: frontend
     #env_file:
-     # - .env
+    # - .env
     build:
       context: ./
       args:
         - --no-cache
       dockerfile: Dockerfile
     ports:
-      - "5173:5173"
+      - '5173:5173'
     #environment:
-      #API_URI: '\${API_URI}'
+    #API_URI: '\${API_URI}'
     volumes:
       - .:/persist
     networks:
@@ -24,4 +24,4 @@ networks:
     ipam:
       driver: default
       config:
-        - subnet: 172.25.0.0/16 
+        - subnet: 172.25.0.0/16

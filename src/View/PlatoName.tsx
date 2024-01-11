@@ -1,16 +1,17 @@
-import { Box, Checkbox, FormControl, FormControlLabel, FormGroup, FormLabel, Typography } from "@mui/material"
-import CircleOutlinedIcon from '@mui/icons-material/CircleOutlined';
-import CircleIcon from '@mui/icons-material/Circle';
-const PlatoName = () => {
+import CircleIcon from '@mui/icons-material/Circle'
+import CircleOutlinedIcon from '@mui/icons-material/CircleOutlined'
+import { Box, Checkbox, FormControl, FormControlLabel, FormGroup, FormLabel, Typography } from '@mui/material'
+import React from 'react'
+const PlatoName: React.FC = () => {
   return (
     <Box
       sx={{
         position: 'relative',
         flexShrink: 0,
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "flex-start",
-        justifyContent: "space-between",
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'flex-start',
+        justifyContent: 'space-between',
         fontSize: '1.25rem',
         gap: '8.12rem',
         width: '100%',
@@ -26,7 +27,7 @@ const PlatoName = () => {
           justifyContent: 'flex-start',
           fontSize: '1.95rem',
           gap: '5rem',
-          width:'30%'
+          width: '30%',
         }}
       >
         <Box
@@ -39,10 +40,10 @@ const PlatoName = () => {
             justifyContent: 'flex-start',
             fontSize: '1.95rem',
             gap: '0.5rem',
-
           }}
         >
-          <Typography variant="h5"
+          <Typography
+            variant="h5"
             sx={{
               fontWeight: 600,
               position: 'relative',
@@ -71,12 +72,12 @@ const PlatoName = () => {
             fontSize: '1.95rem',
             gap: '0.5rem',
             width: '100%',
-
           }}
         >
           <FormControl>
             <FormLabel id="demo-controlled-radio-buttons-group">
-              <Typography variant="h5"
+              <Typography
+                variant="h5"
                 sx={{
                   color: '#000',
                   fontWeight: 600,
@@ -101,68 +102,39 @@ const PlatoName = () => {
             >
               <FormControlLabel
                 value="ingrediente"
-                control={
-                  <Checkbox
-                    icon={<CircleOutlinedIcon />}
-                    checkedIcon={<CircleIcon />}
-                  />}
+                control={<Checkbox icon={<CircleOutlinedIcon />} checkedIcon={<CircleIcon />} />}
                 label="ingrediente"
               />
               <FormControlLabel
                 value="ingrediente"
-                control={
-                  <Checkbox
-                    icon={<CircleOutlinedIcon />}
-                    checkedIcon={<CircleIcon />}
-                  />}
+                control={<Checkbox icon={<CircleOutlinedIcon />} checkedIcon={<CircleIcon />} />}
                 label="ingrediente"
               />
               <FormControlLabel
                 value="ingrediente"
-                control={
-                  <Checkbox
-                    icon={<CircleOutlinedIcon />}
-                    checkedIcon={<CircleIcon />}
-                  />}
+                control={<Checkbox icon={<CircleOutlinedIcon />} checkedIcon={<CircleIcon />} />}
                 label="ingrediente"
               />
               <FormControlLabel
                 value="ingrediente"
-                control={
-                  <Checkbox
-                    icon={<CircleOutlinedIcon />}
-                    checkedIcon={<CircleIcon />}
-                  />}
+                control={<Checkbox icon={<CircleOutlinedIcon />} checkedIcon={<CircleIcon />} />}
                 label="ingrediente"
               />
               <FormControlLabel
                 value="ingrediente"
-                control={
-                  <Checkbox
-                    icon={<CircleOutlinedIcon />}
-                    checkedIcon={<CircleIcon />}
-                  />}
+                control={<Checkbox icon={<CircleOutlinedIcon />} checkedIcon={<CircleIcon />} />}
                 label="ingrediente"
               />
               <FormControlLabel
                 value="ingrediente"
-                control={
-                  <Checkbox
-                    icon={<CircleOutlinedIcon />}
-                    checkedIcon={<CircleIcon />}
-                  />}
+                control={<Checkbox icon={<CircleOutlinedIcon />} checkedIcon={<CircleIcon />} />}
                 label="ingrediente"
               />
               <FormControlLabel
                 value="ingrediente"
-                control={
-                  <Checkbox
-                    icon={<CircleOutlinedIcon />}
-                    checkedIcon={<CircleIcon />}
-                  />}
+                control={<Checkbox icon={<CircleOutlinedIcon />} checkedIcon={<CircleIcon />} />}
                 label="ingrediente"
               />
-
             </FormGroup>
           </FormControl>
         </Box>

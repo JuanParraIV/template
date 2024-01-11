@@ -1,11 +1,12 @@
-import AddShoppingCart from "@mui/icons-material/AddShoppingCart"
-import { Box, Typography } from "@mui/material"
+import AddShoppingCart from '@mui/icons-material/AddShoppingCart'
+import { Box, Typography } from '@mui/material'
+import React from 'react'
 
-const TotalSummary = () => {
+const TotalSummary: React.FC = () => {
   return (
     <Box
       sx={{
-        position: "relative",
+        position: 'relative',
         display: 'flex',
         flexShrink: 0,
         flexDirection: 'column',
@@ -16,7 +17,8 @@ const TotalSummary = () => {
         marginLeft: 'auto',
       }}
     >
-      <Typography variant="subtitle1"
+      <Typography
+        variant="subtitle1"
         sx={{
           position: 'relative',
           display: 'flex',
@@ -47,7 +49,8 @@ const TotalSummary = () => {
           color: '#fff',
         }}
       >
-        <Typography variant="subtitle1"
+        <Typography
+          variant="subtitle1"
           sx={{
             position: 'relative',
             display: 'flex',

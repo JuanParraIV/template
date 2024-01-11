@@ -1,7 +1,9 @@
-import { Box, Typography } from "@mui/material"
-import { SearchBar } from "./SearchBar"
+import { Box, Typography } from '@mui/material'
+import React from 'react'
 
-const Alergia = () => {
+import { SearchBar } from './SearchBar'
+
+const Alergia: React.FC = () => {
   return (
     <Box
       sx={{
@@ -11,8 +13,6 @@ const Alergia = () => {
         justifyContent: 'flex-start',
         gap: '2rem',
         width: '100%',
-
-
       }}
     >
       <Box
@@ -25,7 +25,8 @@ const Alergia = () => {
           gap: '2rem',
         }}
       >
-        <Typography variant="h5"
+        <Typography
+          variant="h5"
           sx={{
             position: 'relative',
             display: 'inline-block',
@@ -46,10 +47,10 @@ const Alergia = () => {
             gap: '0.25rem',
             fontSize: '0.75rem',
             width: '100%',
-
           }}
         >
-          <Typography variant="subtitle1"
+          <Typography
+            variant="subtitle1"
             sx={{
               color: '#9295aa',
 
@@ -57,9 +58,9 @@ const Alergia = () => {
               fontWeight: 600,
             }}
           >
-            Especifique si sufre de algún tipo de alergia
+            {'Especifique si sufre de algún tipo de alergia'}
           </Typography>
-          
+
           <SearchBar />
         </Box>
       </Box>
@@ -92,7 +93,7 @@ const Alergia = () => {
               flexShrink: 0,
             }}
           >
-            Ingrediente
+            {'Ingrediente'}
           </Box>
         </Box>
         <Box
@@ -114,7 +115,7 @@ const Alergia = () => {
               flexShrink: 0,
             }}
           >
-            Ingrediente
+            {'Ingrediente'}
           </Box>
         </Box>
         <Box
@@ -136,7 +137,7 @@ const Alergia = () => {
               flexShrink: 0,
             }}
           >
-            Ingrediente
+            {'Ingrediente'}
           </Box>
         </Box>
         <Box
@@ -158,7 +159,7 @@ const Alergia = () => {
               flexShrink: 0,
             }}
           >
-            Ingrediente
+            {'Ingrediente'}
           </Box>
         </Box>
       </Box>

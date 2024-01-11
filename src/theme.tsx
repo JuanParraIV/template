@@ -1,5 +1,5 @@
-import { red } from '@mui/material/colors';
-import { createTheme } from '@mui/material/styles';
+import { red } from '@mui/material/colors'
+import { createTheme } from '@mui/material/styles'
 
 // A custom theme for this app
 const theme = createTheme({
@@ -11,12 +11,12 @@ const theme = createTheme({
       main: '#fffcf8',
     },
     grey: {
-      "100": 'rgba(255, 255, 255, 0.5)',
+      '100': 'rgba(255, 255, 255, 0.5)',
     },
     error: {
       main: red.A400,
     },
   },
-});
+})
 
-export default theme;
+export default theme

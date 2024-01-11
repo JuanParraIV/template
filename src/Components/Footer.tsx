@@ -1,6 +1,7 @@
-import { Box, Typography } from "@mui/material"
+import { Box, Typography } from '@mui/material'
+import React from 'react'
 
-export const Footer = () => {
+export const Footer: React.FC = () => {
   return (
     <Box
       sx={{
@@ -34,21 +35,24 @@ export const Footer = () => {
             fontWeight: 500,
           }}
         >
-          <Typography variant="subtitle1"
+          <Typography
+            variant="subtitle1"
             sx={{
               margin: 0,
             }}
           >
             Política de publicidad
           </Typography>
-          <Typography variant="subtitle1"
+          <Typography
+            variant="subtitle1"
             sx={{
               margin: 0,
             }}
           >
             Términos y condiciones
           </Typography>
-          <Typography variant="subtitle1"
+          <Typography
+            variant="subtitle1"
             sx={{
               margin: 0,
             }}
@@ -76,7 +80,8 @@ export const Footer = () => {
               justifyContent: 'center',
             }}
           >
-            <Typography variant="subtitle1"
+            <Typography
+              variant="subtitle1"
               sx={{
                 position: 'relative',
                 display: 'inline-block',
@@ -109,21 +114,24 @@ export const Footer = () => {
               fontWeight: 500,
             }}
           >
-            <Typography variant="subtitle1"
+            <Typography
+              variant="subtitle1"
               sx={{
                 margin: 0,
               }}
             >
               Home
             </Typography>
-            <Typography variant="subtitle1"
+            <Typography
+              variant="subtitle1"
               sx={{
                 margin: 0,
               }}
             >
               Empresas
             </Typography>
-            <Typography variant="subtitle1"
+            <Typography
+              variant="subtitle1"
               sx={{
                 margin: 0,
               }}

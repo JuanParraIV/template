@@ -1,12 +1,15 @@
 import { Box } from '@mui/material'
-import { RecommendView } from './RecommendView'
+import React from 'react'
+
+import { SearchBar } from '@/Components/SearchBar'
+
 import { AssociateView } from './AssociateView'
 import { MenuView } from './MenuView'
 import { PaginateView } from './PaginateView'
 import { PlatosView } from './PlatosView'
-import { SearchBar } from '@/Components/SearchBar'
+import { RecommendView } from './RecommendView'
 
-export const FeedView = () => {
+export const FeedView: React.FC = () => {
   return (
     <Box
       sx={{
@@ -25,17 +28,17 @@ export const FeedView = () => {
       <SearchBar />
 
       {/* Platos View */}
-      <Box sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'flex-start',
-        width: '100%',
-        height: '100%',
-        gap:'3rem',
-
-      }}>
-
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'flex-start',
+          width: '100%',
+          height: '100%',
+          gap: '3rem',
+        }}
+      >
         <PlatosView />
 
         {/* Paginator View */}
@@ -53,4 +56,3 @@ export const FeedView = () => {
     </Box>
   )
 }
-

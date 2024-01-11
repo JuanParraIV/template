@@ -1,7 +1,9 @@
-import { PlatosCard } from '@/Components/PlatosCard'
 import { Box } from '@mui/material'
+import React from 'react'
 
-export const PlatosCardView = () => {
+import { PlatosCard } from '@/Components/PlatosCard'
+
+export const PlatosCardView: React.FC = () => {
   return (
     <Box
       flexShrink={0}
@@ -19,11 +21,10 @@ export const PlatosCardView = () => {
         gap={'7.25rem'}
       >
         {/* PlatosCard */}
-        <PlatosCard/>
-        <PlatosCard/>
-        <PlatosCard/>
+        <PlatosCard />
+        <PlatosCard />
+        <PlatosCard />
       </Box>
-
     </Box>
   )
 }

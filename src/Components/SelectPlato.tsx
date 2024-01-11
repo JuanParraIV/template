@@ -1,12 +1,13 @@
-import { FormControl, InputLabel, Select } from '@mui/material'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
+import { FormControl, InputLabel, Select } from '@mui/material'
+import React from 'react'
+
 import PlatoName from '@/View/PlatoName'
 
-export const SelectPlato = () => {
+export const SelectPlato: React.FC = () => {
   return (
     <>
       <FormControl fullWidth>
-
         <InputLabel
           sx={{
             color: '#000',
@@ -17,22 +18,22 @@ export const SelectPlato = () => {
         </InputLabel>
         <Select
           IconComponent={KeyboardArrowDownIcon}
-          label='Nombre del plato'
+          label="Nombre del plato"
           sx={{
-            "& .MuiSelect-icon": {
+            '& .MuiSelect-icon': {
               color: '#f86260',
               position: 'relative',
               width: '1.5rem',
               height: '1.5rem',
               overflow: 'hidden',
               flexShrink: 0,
-              objectFit: 'contain',  
+              objectFit: 'contain',
             },
-            "& .MuiOutlinedInput-notchedOutline": {
-              border: 'none',  // Remueve el borde del Select
+            '& .MuiOutlinedInput-notchedOutline': {
+              border: 'none', // Remueve el borde del Select
             },
-            "&:hover .MuiOutlinedInput-notchedOutline": {
-              border: 'none',  // Remueve el borde del Select al hacer hover
+            '&:hover .MuiOutlinedInput-notchedOutline': {
+              border: 'none', // Remueve el borde del Select al hacer hover
             },
             borderRadius: '20px',
             backgroundColor: '#fffcf8',
@@ -44,10 +45,8 @@ export const SelectPlato = () => {
             justifyContent: 'flex-start',
             padding: '0.5rem',
           }}
-
         >
           <PlatoName />
-
         </Select>
       </FormControl>
     </>

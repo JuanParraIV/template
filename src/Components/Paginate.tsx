@@ -1,10 +1,11 @@
-import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
-import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import { Pagination, PaginationItem } from '@mui/material';
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft'
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight'
+import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft'
+import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight'
+import { Pagination, PaginationItem } from '@mui/material'
+import React from 'react'
 
-export const Paginate = () => {
+export const Paginate: React.FC = () => {
   return (
     <>
       <Pagination
@@ -21,13 +22,13 @@ export const Paginate = () => {
           gap: '0.25rem',
           fontFamily: 'Inter',
         }}
-        color='primary'
-        shape='rounded'
+        color="primary"
+        shape="rounded"
         siblingCount={0}
         boundaryCount={1}
-        size='small'
+        size="small"
         count={12}
-        renderItem={(item) => (
+        renderItem={item => (
           <PaginationItem
             sx={{
               width: '1.56rem',
@@ -43,14 +44,14 @@ export const Paginate = () => {
               previous: KeyboardArrowLeftIcon,
               next: KeyboardArrowRightIcon,
               first: KeyboardDoubleArrowLeftIcon,
-              last: KeyboardDoubleArrowRightIcon
+              last: KeyboardDoubleArrowRightIcon,
             }}
             {...item}
           />
         )}
         showFirstButton
-        showLastButton />
+        showLastButton
+      />
     </>
   )
 }
-

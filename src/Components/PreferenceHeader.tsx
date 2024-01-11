@@ -1,8 +1,9 @@
-import { Box, Typography } from '@mui/material'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew'
+import { Box, Typography } from '@mui/material'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
-export const PreferenceHeader = () => {
+export const PreferenceHeader: React.FC = () => {
   return (
     <>
       <Link to={'/'}>
@@ -27,7 +28,8 @@ export const PreferenceHeader = () => {
               objectFit: 'contain',
             }}
           />
-          <Typography variant='h6'
+          <Typography
+            variant="h6"
             sx={{
               position: 'relative',
               display: 'inline-block',
@@ -39,8 +41,7 @@ export const PreferenceHeader = () => {
             Preferencias
           </Typography>
         </Box>
-      </Link >
+      </Link>
     </>
-
   )
 }

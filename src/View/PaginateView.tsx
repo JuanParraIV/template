@@ -1,10 +1,11 @@
-import { Paginate } from '@/Components/Paginate'
 import { Box } from '@mui/material'
+import React from 'react'
 
-export const PaginateView = () => {
+import { Paginate } from '@/Components/Paginate'
+
+export const PaginateView: React.FC = () => {
   return (
-    <Box
-    >
+    <Box>
       <Paginate />
     </Box>
   )
