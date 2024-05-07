@@ -18,10 +18,10 @@ pipeline {
             }
             steps {
                 sh '''
-                yarn install
-                yarn spelling:ci ./src
-                yarn eslint:ci ./src
-                yarn prettier:ci ./src
+                npm install
+                npm run spelling:ci ./src
+                npm run eslint:ci ./src
+                npm run prettier:ci ./src
                 '''
             }
         }
