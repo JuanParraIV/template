@@ -9,6 +9,22 @@ pipeline {
         DOCKER_VERSION='v1'
     }
     stages {
+        stage('Lint Code Base') {
+            agent{
+                docker{
+                    image 'node:18'
+                    args '-u root:root'
+                }
+            }
+            steps {
+                sh '''
+                yarn install
+                yarn spelling:ci ./src
+                yarn eslint:ci ./src
+                yarn prettier:ci ./src
+                '''
+            }
+        }
         stage('build') {
             steps {
                 sh 'docker build -t $DOCKER_IMAGE:$DOCKER_VERSION .'
