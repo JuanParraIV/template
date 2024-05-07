@@ -59,6 +59,7 @@ pipeline {
             steps{
                 sshagent (['ssh-aws']) {
                     sh 'scp -o StrictHostKeyChecking=no docker-compose.yml $CLOUD_SERVER:/home/ec2-user'
+                    sh 'ssh $CLOUD_SERVER docker-compose up -d'
                 }
 
             }
