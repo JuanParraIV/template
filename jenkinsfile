@@ -40,5 +40,15 @@ pipeline {
                 '''
             }
         }
+        stage('update compose'){
+            steps{
+                sh '''
+                sed -i -- "s/DOCKER_REGISTRY/$DOCKER_REGISTRY/g" docker-compose.yml
+                sed -i -- "s/DOCKER_IMAGE/$DOCKER_IMAGE/g" docker-compose.yml
+                sed -i -- "s/DOCKER_VERSION/$DOCKER_VERSION/g" docker-compose.yml
+                cat docker-compose.yml
+                '''
+            }
+        }
     }//end stages
 }//end pipeline
