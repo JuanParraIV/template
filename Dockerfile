@@ -10,7 +10,7 @@ RUN apk add bash
 RUN apk add curl
 ENV TZ=America/Bogota
 ENV PORT 5000
-WORKDIR /usr/src/app
+WORKDIR /app
 COPY package*.json /app/
 RUN npm install
 COPY . /app/
