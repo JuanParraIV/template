@@ -2,13 +2,8 @@ pipeline {
     agent any
     environment{
         DOCKER_HUB_LOGIN = credentials('docker')
-        GIT_REPO_USER='JuanParraIV'
-        GIT_REPO_NAME='React_Typescript_MaterialUI_Zustand'
-        DOCKER_IMAGE='template'
-        DOCKER_REGISTRY='jotamario'
-        DOCKER_VERSION='v1'
         DOCKER_ARGS = '-u root:root -v $HOME/.npm:/.npm'
-        CLOUD_SERVER='ec2-user@54.159.156.35'
+
     }
     stages {
         stage('Init') {
