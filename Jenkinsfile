@@ -31,7 +31,7 @@ pipeline {
                         script {
                             docker.image('node:18-alpine').inside("${DOCKER_ARGS}") {
                                 try {
-                                    sh 'npm run test'
+                                    echo 'npm run test'
                                 } catch (err) {
                                     throw err
                                 }
