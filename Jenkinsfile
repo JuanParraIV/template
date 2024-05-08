@@ -46,7 +46,7 @@ pipeline {
                 stage('Horusec') {
                     steps {
                         sh './automation/auto_security.sh horusec'
-                        stash include: 'report_horusec.json', name: 'report_horusec.json'
+                        stash includes: 'report_horusec.json', name: 'report_horusec.json'
                     }
                 }//Horusec
                 stage('Npm Audit') {
