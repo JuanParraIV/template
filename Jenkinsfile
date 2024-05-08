@@ -14,6 +14,7 @@ pipeline {
                             docker.image('node:18-alpine').inside("${DOCKER_ARGS}") {
                                 try {
                                     sh '''
+                                    chmod u+x automation/*
                                     npm install
                                     npm run spelling:ci ./src
                                     npm run eslint:ci ./src
