@@ -1,7 +1,5 @@
 #!/bin/bash
 # set -x
-source ./automation/auto_config.sh
-source ./automation/auto_getenv.sh
 
 BOT_URL="https://api.telegram.org/frontend_daily_bot:7310706266:AAGhOe5ln7nMeP2K0GM7TFb9B2LBcV_JL2g/sendMessage"
 TELEGRAM_CHAT_ID="-1002086247240_171"
