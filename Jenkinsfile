@@ -118,7 +118,7 @@ pipeline {
             -X POST -H 'cache-control: no-cache' \
             -H 'content-type: application/x-www-form-urlencoded' \
             --data 'VERSION=${env.VERSION}&REPOSITORY=${env.REPOSITORY}&REGISTRY=${env.REGISTRY}' \
-            'http://192.168.49.2:31831//job/Template-CD/buildWithParameters?token=gitops-token'
+            'http://192.168.49.2:31831/job/Template-CD/buildWithParameters?token=gitops-token'
             """
           }
         }
