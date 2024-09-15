@@ -7,7 +7,7 @@ pipeline {
     environment {
         SCANNER_HOME = tool 'sonar-scanner'
         JENKINS_API_TOKEN = credentials('JENKINS_API_TOKEN')
-        DOCKER_HUB_LOGIN = credentials('docker')
+        DOCKER_HUB_LOGIN = credentials('docker-hub')
         DOCKER_ARGS = '-u root:root -v $HOME/.npm:/.npm'
     } //environment
     stages {
